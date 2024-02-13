@@ -1,8 +1,8 @@
-//key bindings, all should be lowercase letters
-#define MOVL 'q'
-#define MOVR 'e'
-#define ROTA 'w'
-#define DROP 'a'
+//key bindings, all should be lowercase letters, uper cases D, C, A, B represents the end char of tree chars of input keys.
+#define MOVL 'D'
+#define MOVR 'C'
+#define ROTA 'A'
+#define DROP 'B'
 #define RSET 'l'
 #define SNXT 'z'
 #define STXT 'c'
