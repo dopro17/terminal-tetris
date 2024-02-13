@@ -1454,6 +1454,17 @@ void setkeybind(){
     right[8][3]=toupper(EXT);
 }
 
+intt getkey(){
+    // gets the 3 chars related to the arrow keys.
+    int key;
+    key = getch();
+    if (key == 0x1b){ // if the key is escape key
+	    getch(); //Ignore the '['
+	    key = getch(); // then get the key.
+    }
+    return key;
+}
+
 int game(){
   //simulates a game of tetris
   nodelay(stdscr, FALSE);
